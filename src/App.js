@@ -3,7 +3,7 @@ import React from 'react'
 class App extends React.Component {
     constructor (props) {
         super(props)
-        fetch('http://localhost:8082/api')
+        fetch('/api')
             .then(response => {
                 if (response.status != 200) {
                     throw new Error('Bad response from server');
